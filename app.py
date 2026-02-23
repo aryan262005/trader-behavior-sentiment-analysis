@@ -12,6 +12,7 @@ st.markdown("Interactive exploration of trader performance under different marke
 
 @st.cache_data
 def load_data():
+    # NOTE: Run the notebook first to generate merged_data.csv locally
     return pd.read_csv("merged_data.csv")
 
 merged = load_data()
@@ -86,4 +87,5 @@ under varying sentiment regimes.
 - Long bias increases during Greed periods.
 
 Use the sidebar filters to explore segment-level behavior.
+
 """)
